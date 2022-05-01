@@ -1,0 +1,23 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "Pomodoro App",
+  "scripts": {
+    "start": "browser-sync start --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcoderoff/pomodoro.git"
+  },
+  "keywords": [
+    "pomodoro"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcoderoff/pomodoro/issues"
+  },
+  "homepage": "https://github.com/dcoderoff/pomodoro#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9"
+  }
+}
