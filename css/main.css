@@ -32,13 +32,26 @@
 .play__button {
   width: 40px;
   height: 40px;
-  background-size: cover;
-  background-image: url("../img/play.svg");
+  background-size: 100%;
   background-color: transparent;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
 
-.play__button_state-pause {
-   background-image: url("../img/pause.svg");
+.play__button::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../img/play.svg") url("../img/pause.svg");
+}
+
+.play__button_state-active {
+  background-image: url("../img/pause.svg");
+}
+
+.play__button_state-paused {
+  background-image: url("../img/play.svg");
 }
