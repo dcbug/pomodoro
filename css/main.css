@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.pomo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+  font-size: 72px;
+}
+
+.pomo__min, .pomo__sec, .pomo__divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 120px;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play__button {
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.play__button::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../img/play.svg") url("../img/pause.svg");
+}
+
+.play__button_state-active {
+  background-image: url("../img/pause.svg");
+}
+
+.play__button_state-paused {
+  background-image: url("../img/play.svg");
+}
