@@ -11,18 +11,21 @@
   <header class="header">
     <h1 class="header__title">Pomodoro Timer</h1>
   </header>
-  <main class="main">
+  
+  <main class="main"></main>
+  
+  <template id="pomo">
     <div class="pomo">
-      <div class="pomo__min">25</div>
-      <div class="pomo__divider">:</div>
-      <div class="pomo__sec">00</div>
-    </div>
-    <div class="control-panel">
+      <div class="pomo__clock">
+        <div class="pomo__min">25</div>
+        <div class="pomo__divider">:</div>
+        <div class="pomo__sec">00</div>
+      </div>
       <div class="play">
         <button class="play__button play__button_state-paused"></button>
       </div>
     </div>
-  </main>
+  </template>
 
   <script type="module" src="js/main.js"></script>
 </body>
